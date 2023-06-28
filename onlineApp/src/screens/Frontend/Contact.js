@@ -1,10 +1,11 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-export default function App() {
+export default function App({navigation}) {
   return (
     <View style={styles.flexContainer}>
-      <Text style={styles.heading}>Contact</Text>
+      <Text style={styles.heading} onPress={()=>{navigation.navigate('Home')}}>Contact</Text>
+      <Text style={styles.heading} onPress={()=>{navigation.goBack()}}>back</Text>
     </View>
   )
 }

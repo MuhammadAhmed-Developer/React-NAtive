@@ -1,13 +1,14 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Button } from 'react-native';
 
-export default function App() {
+export default function App({navigation}) {
   return (
     <View style={styles.flexContainer}>
       <View style={[styles.box, styles.flexCenter]}>
         <Text>Home</Text>
       </View>
       <Text style={styles.heading}>Home</Text>
+      <View><Button title='Go To About' onPress={()=>{navigation.navigate('About')}}/></View>
     </View>
   )
 }

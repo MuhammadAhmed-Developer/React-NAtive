@@ -1,10 +1,10 @@
 import React from 'react';
-import About from './About'
+import Home from './Home';
 
 export default function Frontend() {
   return (
     <>
-      <About/>
+      <Home/>
     </>
   )
 }

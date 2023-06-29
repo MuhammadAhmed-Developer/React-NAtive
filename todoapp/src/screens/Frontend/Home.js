@@ -1,5 +1,6 @@
-import React from 'react'
-import { View, Text, StyleSheet, Image, Button } from 'react-native'
+import React from 'react';
+import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
+import { View, Text, StyleSheet, Image, Button ,} from 'react-native'
 
 export default function Home({navigation}) {
     return (
@@ -10,6 +11,7 @@ export default function Home({navigation}) {
                 source={{ uri: 'https://www.reactnative.express/static/logo.png' }}
             />
             <Button title='Go tO About' color={'red'} style={styles.button}   onPress={()=>{navigation.navigate('About')}}/>
+            <FontAwesome5 name='home' color='green' size={50}/>
         </View>
 
     )
